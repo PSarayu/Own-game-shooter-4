@@ -35,12 +35,13 @@ function draw(){
 background(bg)
 
 if(gameState==="start"){
+   
     textSize(25)
     fill("white")
-    text("Press 'P' to start the game",displayWidth/2-150,displayHeight/2-200)
+    text("Press 'S' to start the game",displayWidth/2-150,displayHeight/2-200)
     
 }
-if (keyDown==="p"){
+if (keyDown("s")){
 
         
     gameState="play"
@@ -113,8 +114,9 @@ textSize(25)
     text("Press 'r' to restart",dsplayWidth/2,displayHeight/2+30)
    
  }
-if(keyDown==='r'){
+if(keyDown("r")){
     gameState="start"
+    score=0
   }
 
 }
